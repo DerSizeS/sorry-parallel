@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "projects": {
+    "director": {
+      "type": "library",
+      "root": "libs/director",
+      "entryFile": "index",
+      "sourceRoot": "libs/director/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/director/tsconfig.lib.json"
+      }
+    },
+    "director-db-in-memory": {
+      "type": "library",
+      "root": "libs/director-db-in-memory",
+      "entryFile": "index",
+      "sourceRoot": "libs/director-db-in-memory/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/director-db-in-memory/tsconfig.lib.json"
+      }
+    },
+    "client-nx": {
+      "type": "library",
+      "root": "libs/client-nx",
+      "entryFile": "index",
+      "sourceRoot": "libs/client-nx/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/client-nx/tsconfig.lib.json"
+      }
+    },
+    "executor": {
+      "type": "library",
+      "root": "libs/executor",
+      "entryFile": "index",
+      "sourceRoot": "libs/executor/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/executor/tsconfig.lib.json"
+      }
+    },
+    "executor-spawn": {
+      "type": "library",
+      "root": "libs/executor-spawn",
+      "entryFile": "index",
+      "sourceRoot": "libs/executor-spawn/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/executor-spawn/tsconfig.lib.json"
+      }
+    },
+    "executor-nx-spawn": {
+      "type": "library",
+      "root": "libs/executor-nx-spawn",
+      "entryFile": "index",
+      "sourceRoot": "libs/executor-nx-spawn/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/executor-nx-spawn/tsconfig.lib.json"
+      }
+    }
+  },
+  "compilerOptions": {
+    "webpack": true
+  }
+}

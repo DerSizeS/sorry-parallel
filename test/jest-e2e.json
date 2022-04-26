@@ -1,0 +1,23 @@
+{
+  "moduleFileExtensions": ["js", "json", "ts"],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "sp/director/(.*)": "<rootDir>/../libs/director/src/$1",
+    "sp/director": "<rootDir>/../libs/director/src",
+    "sp/director-db-in-memory/(.*)": "<rootDir>/../libs/director-db-in-memory/src/$1",
+    "sp/director-db-in-memory": "<rootDir>/../libs/director-db-in-memory/src",
+    "sp/client-nx/(.*)": "<rootDir>/../libs/client-nx/src/$1",
+    "sp/client-nx": "<rootDir>/../libs/client-nx/src",
+    "sp/executor/(.*)": "<rootDir>/../libs/executor/src/$1",
+    "sp/executor": "<rootDir>/../libs/executor/src",
+    "sp/executor-spawn/(.*)": "<rootDir>/../libs/executor-spawn/src/$1",
+    "sp/executor-spawn": "<rootDir>/../libs/executor-spawn/src",
+    "sp/executor-nx-spawn/(.*)": "<rootDir>/../libs/executor-nx-spawn/src/$1",
+    "sp/executor-nx-spawn": "<rootDir>/../libs/executor-nx-spawn/src"
+  }
+}

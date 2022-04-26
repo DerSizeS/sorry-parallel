@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "sp/director": ["libs/director/src"],
+      "sp/director/*": ["libs/director/src/*"],
+      "sp/director-db-in-memory": ["libs/director-db-in-memory/src"],
+      "sp/director-db-in-memory/*": ["libs/director-db-in-memory/src/*"],
+      "sp/client-nx": ["libs/client-nx/src"],
+      "sp/client-nx/*": ["libs/client-nx/src/*"],
+      "sp/executor": ["libs/executor/src"],
+      "sp/executor/*": ["libs/executor/src/*"],
+      "sp/executor-spawn": ["libs/executor-spawn/src"],
+      "sp/executor-spawn/*": ["libs/executor-spawn/src/*"],
+      "sp/executor-nx-spawn": ["libs/executor-nx-spawn/src"],
+      "sp/executor-nx-spawn/*": ["libs/executor-nx-spawn/src/*"]
+    }
+  }
+}
